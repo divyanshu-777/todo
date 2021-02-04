@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Room</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+    .outerdiv{
+        margin: 100px auto;
+        border: 2px solid white;
+        max-width: 400px;
+      
+    }
+    .innerdiv{
+       padding: 30px;
+    }
+    body{
+        background-color: rgb(34, 33, 33);
+    }
+    h2{
+        color: white;
+    }
+</style>
+<body>
+     <form method="POST" action="/room">
+        <div class="outerdiv">
+            <div class="innerdiv text-center">
+                <h2>JOIN</h2><br/>
+    <input class="form-control" placeholder="Username" type="text" name ="Username" value="" id="username" required/><br/><br/><br/>
+    <input class="form-control" placeholder="Room" type="text" value="" name="room" id="room" required/><br/><br/>
+    <button class="btn btn-primary">Join Chat</button>
+            </div>
+    </div>
+</form>
+</body>
+</html>
